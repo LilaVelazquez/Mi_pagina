@@ -1,0 +1,132 @@
+
+<!-- ===================================================== -->
+<!-- PÁGINA PRINCIPAL -->
+<!-- ===================================================== -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- Configuración básica -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive para celular -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título -->
+    <title>Turismo San Felipe del Progreso</title>
+
+    <!-- Conectamos CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+
+    <!-- ================================================= -->
+    <!-- MENÚ -->
+    <!-- ================================================= -->
+
+    <header class="navbar">
+
+        <h1>San Felipe del Progreso</h1>
+
+        <nav>
+            <a href="/">Inicio</a>
+            <a href="#lugares">Lugares</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+    </header>
+
+    <!-- ================================================= -->
+    <!-- BANNER PRINCIPAL -->
+    <!-- ================================================= -->
+
+    <section class="banner">
+
+        <div class="banner-contenido">
+
+            <h2>
+                Descubre los lugares turísticos
+            </h2>
+
+            <p>
+                Cultura, naturaleza e historia.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================================================= -->
+    <!-- GALERÍA -->
+    <!-- ================================================= -->
+
+    <section id="lugares" class="contenedor">
+
+        <h2>Lugares turísticos</h2>
+
+        <div class="galeria">
+
+            <!-- Recorremos los lugares enviados desde Python -->
+            {% for lugar in lugares %}
+
+            <article class="tarjeta">
+
+                <!-- Imagen clickeable -->
+                <a href="{{ url_for('detalle_lugar', id_lugar=lugar.id) }}">
+
+                    <img src="{{ lugar.imagen }}"
+                         alt="{{ lugar.nombre }}">
+
+                </a>
+
+                <div class="texto">
+
+                    <h3>{{ lugar.nombre }}</h3>
+
+                    <p>{{ lugar.descripcion }}</p>
+
+                    <a class="boton"
+                       href="{{ url_for('detalle_lugar', id_lugar=lugar.id) }}">
+
+                       Ver más
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+    <!-- ================================================= -->
+    <!-- CONTACTO -->
+    <!-- ================================================= -->
+
+    <section id="contacto" class="contacto">
+
+        <h2>Contacto</h2>
+
+    <form action="https://formsubmit.co/lilakarenv@gmail.com"
+      method="POST">
+
+   <input type="text" placeholder="Nombre"> 
+   <input type="email" placeholder="Correo"> 
+   <textarea placeholder="Mensaje"></textarea> 
+   <button type="Enviar"> Enviar </button>
+
+    </form>
+
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+
+/* =============================================== */
+/* ESTILOS GENERALES */
+/* =============================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Estilo del body */
+body{
+    font-family:Arial;
+    background:#f4f8f7;
+}
+
+/* =============================================== */
+/* MENÚ */
+/* =============================================== */
+
+.navbar{
+    background:#14532d;
+    color:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+}
+
+/* =============================================== */
+/* BANNER */
+/* =============================================== */
+
+.banner{
+    height:420px;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url('https://tolucalabellacd.wpcomstaging.com/wp-content/uploads/2023/06/San-Felipe-del-Progreso-Principal.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+}
+
+.banner-contenido h2{
+    font-size:45px;
+}
+
+/* =============================================== */
+/* GALERÍA */
+/* =============================================== */
+
+.contenedor{
+    padding:50px;
+}
+
+.galeria{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(250px,1fr));
+
+    gap:25px;
+}
+
+.tarjeta{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.2);
+}
+
+.tarjeta img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.texto{
+    padding:20px;
+}
+
+/* =============================================== */
+/* BOTONES */
+/* =============================================== */
+
+.boton{
+    display:inline-block;
+    margin-top:15px;
+
+    background:#14532d;
+    color:white;
+
+    padding:10px 20px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+}
+
+/* =============================================== */
+/* CONTACTO */
+/* =============================================== */
+
+.contacto{
+    background:#dcfce7;
+    padding:50px;
+    text-align:center;
+}
+
+form{
+    max-width:500px;
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:15px;
+}
+
+input, textarea{
+    padding:12px;
+}
+
+button{
+    background:#14532d;
+    color:white;
+
+    border:none;
+
+    padding:12px;
+}
+
+/* =============================================== */
+/* DETALLE */
+/* =============================================== */
+
+.detalle-banner{
+    height:350px;
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+}
+
+.detalle{
+    max-width:800px;
+
+    margin:40px auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+}
