@@ -116,13 +116,15 @@
 
         <h2>Contacto</h2>
 
-    <form action="https://formsubmit.co/lilakarenv@gmail.com"
-      method="POST">
+    <form action="https://formsubmit.co/lilakarenv@gmail.com" method="POST">
 
-   <input type="text" placeholder="Nombre"> 
-   <input type="email" placeholder="Correo"> 
-   <textarea placeholder="Mensaje"></textarea> 
-   <button type="Enviar"> Enviar </button>
+    <input type="text" name="nombre" placeholder="Nombre" required>
+
+    <input type="email" name="correo" placeholder="Correo" required>
+
+    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+
+    <button type="submit">Enviar</button>  
 
     </form>
 
