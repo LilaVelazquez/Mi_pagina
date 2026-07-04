@@ -70,14 +70,14 @@ lugares = [
         "id": 3,
         "nombre": "Cascada del salto del tigre",
         "imagen": "https://th.bing.com/th/id/OIP.eLxz1wg27J8-N6jBZSB2XAHaEi?w=291&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-        "descripcion": "Zona principal del municipio llena de tradición.",
-        "ubicacion": "Centro de San Felipe del Progreso",
+        "descripcion": "Caída de agua escondida entre el cerro del Tigre y cañadas boscosas en San Felipe del Progreso",
+        "ubicacion": "Villa de Santa Ana Nichi",
         "latitud": 19.7060,
         "longitud": -99.9440,  
         "actividades": [
-            "Conocer comercios",
-            "Probar comida local",
-            "Recorrer el jardín principal"
+            "Conexión con la naturaleza",
+            "Senderismo",
+            "ecoturismo, exploración cultural"
         ]
     }
 ]
