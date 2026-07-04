@@ -77,7 +77,7 @@ lugares = [
         "actividades": [
             "Conexión con la naturaleza",
             "Senderismo",
-            "ecoturismo, exploración cultural"
+            "Ecoturismo, exploración cultural"
         ]
     }
 ]
