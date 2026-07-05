@@ -34,17 +34,17 @@ lugares = [
         "descripcion": "Espacio cultural que representa la identidad mazahua.",
 
         # Ubicación
-        "ubicacion": "San Felipe del Progreso, Estado de México",
+        "ubicacion": "Santa Ana Nichi, San Felipe del Progreso, Estado de México",
         
-        "latitud": 19.7130,
-        "longitud": -99.9510,
+        "latitud": 19.572714,
+        "longitud": -99.962900,
         
         
         # Lista de actividades
         "actividades": [
-            "Tomar fotografías",
-            "Conocer la cultura mazahua",
-            "Recorrer áreas culturales"
+            "Senderismo, picnic, eventos",
+            "Exhibidor de herbívoros, salón de artesanías y salón de rituales",
+            "Servicios:Estacionamiento, caseta de administración, vigilancia, palapas y sanitarios"
         ]
     },
 
@@ -54,14 +54,14 @@ lugares = [
         "nombre": "Presa de Tepetitlán",
         "imagen": "https://th.bing.com/th/id/OIP.9sy6JlYLRwaWHs8bKyvvMQHaEK?w=317&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
         "descripcion": "Lugar natural ideal para descansar y disfrutar paisajes.",
-        "ubicacion": "Tepetitlán, San Felipe del Progreso",
-        "latitud": 19.6870,
-        "longitud": -99.9280,
+        "ubicacion": "San Antonio Mextepec, San Felipe del Progreso, Estado de México",
+        "latitud": 19.661047,
+        "longitud": -99.961116,
         
         "actividades": [
-            "Caminar",
-            "Tomar fotografías",
-            "Convivencia familiar"
+            "Paseos en lancha, Convivencia familiar",
+            "Pesca reacreativa, observación de aves",
+            "Fotografía de paisajes, caminar"
         ]
     },
 
@@ -71,9 +71,9 @@ lugares = [
         "nombre": "Cascada del salto del tigre",
         "imagen": "https://th.bing.com/th/id/OIP.eLxz1wg27J8-N6jBZSB2XAHaEi?w=291&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
         "descripcion": "Caída de agua escondida entre el cerro del Tigre y cañadas boscosas en San Felipe del Progreso",
-        "ubicacion": "Villa de Santa Ana Nichi",
-        "latitud": 19.7060,
-        "longitud": -99.9440,  
+        "ubicacion": "Villa de Santa Ana Nichi, San Felipe del Progreso, Estado de México",
+        "latitud": 19.588630,
+        "longitud": -99.956051,  
         "actividades": [
             "Conexión con la naturaleza",
             "Senderismo",
