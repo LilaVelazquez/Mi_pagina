@@ -88,7 +88,13 @@
 <center>Ubicación</center>
 
 <div id="map"></div>
-
+<div style="text-align:center; margin-top:20px;">
+    <a class="boton"
+       href="https://www.google.com/maps/search/?api=1&query={{ lugar.latitud }},{{ lugar.longitud }}"
+       target="_blank">
+         Abrir en Google Maps
+    </a>
+</div>
 <!-- Leaflet JS -->
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
