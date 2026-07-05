@@ -109,9 +109,9 @@
     }).addTo(map);
 
     L.marker([latitud, longitud])
-        .addTo(map)
-        .bindPopup('{{ lugar.nombre }}')
-        .openPopup();
+    .addTo(map)
+    .bindPopup("<b>{{ lugar.nombre }}</b><br>{{ lugar.ubicacion }}")
+    .openPopup();
 </script>
 
 </body>
