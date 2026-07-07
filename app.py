@@ -113,7 +113,34 @@ lugares = [
         ]
     }
 ]
+eventos = [
 
+    {
+        "nombre": "Feria de Nuestro Padre Jesús",
+        "fecha": "Enero",
+        "lugar": "Plaza Principal",
+        "descripcion": "Danzas tradicionales, música, gastronomía local y una peculiar ofrenda de palomitas de maíz "
+        "que los pobladores llevan al santo patrono desde hace más de 300 años"
+        
+    },
+
+    {
+        "nombre": "Rodadas turísticas",
+        "fecha": "Enero",
+        "lugar": "Centro ceremonial Mazahua y Presa de Tepetilán",
+        "descripcion": "Eventos promovidos para impulsar el turismo que convocan a cientos de motociclistas"
+        "y ciclistas para recorrer el Centro Ceremonial Mazahua y la presa de Tepetitlán."
+        
+    },
+
+    {
+        "nombre": "Festival Cultural Mazahua",
+        "fecha": "15 al 18 de agosto",
+        "lugar": "Centro Ceremonial Mazahua",
+        "descripcion": "Evento con danzas, música tradicional, gastronomía y artesanías."
+    }
+
+]
 # =========================================================
 # RUTA PRINCIPAL
 # =========================================================
@@ -127,6 +154,14 @@ def inicio():
     # render_template sirve para abrir un archivo HTML
     # También enviamos la lista de lugares
     return render_template("index.html", lugares=lugares)
+
+@app.route("/eventos")
+def eventos_page():
+
+    return render_template(
+        "eventos.html",
+        eventos=eventos
+    )
 
 def obtener_clima(latitud, longitud):
 
