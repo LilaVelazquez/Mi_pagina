@@ -176,3 +176,30 @@ button{
 
     border-radius:15px;
 }
+.clima{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:20px;
+
+    margin-top:25px;
+
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+
+}
+
+.clima h2{
+
+    color:#2E8B57;
+
+}
+
+.clima p{
+
+    font-size:18px;
+
+    margin:8px 0;
+
+}
