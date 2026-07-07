@@ -92,15 +92,29 @@
 <div id="map"></div>
 <div class="clima">
 
+     {% if clima %}
+
+<div class="clima">
+
     <h2>🌦 Clima actual</h2>
 
-    <p>🌡 {{ clima.temperature_2m }} °C</p>
+    <p>🌡 <strong>Temperatura:</strong> {{ clima.temperature_2m }} °C</p>
 
-    <p>💧 Humedad: {{ clima.relative_humidity_2m }}%</p>
+    <p>💧 <strong>Humedad:</strong> {{ clima.relative_humidity_2m }} %</p>
 
-    <p>💨 Viento: {{ clima.wind_speed_10m }} km/h</p>
+    <p>💨 <strong>Viento:</strong> {{ clima.wind_speed_10m }} km/h</p>
 
-</div>    
+</div>
+
+{% else %}
+
+<div class="clima">
+    <h2>🌦 Clima actual</h2>
+    <p>No fue posible obtener la información del clima.</p>
+</div>
+
+{% endif %}
+    
 <div style="text-align:center; margin-top:15px;">
     <a class="boton"
        href="https://www.google.com/maps/dir/?api=1&destination={{ lugar.latitud }},{{ lugar.longitud }}"
