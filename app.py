@@ -71,7 +71,7 @@ lugares = [
         Puedes ingresar por San Felipe del Progreso – Ixtlahuaca, desviación a Santa Cruz Mextepec, 
         por la carretera San Felipe – Carmona km 2, desviación a Estutempan. El lugar es muy bello, 
         pero no es apto para nadar, así que para evitar accidentes no debes sumergirte en sus aguas, 
-        solo está permitido el pasar por algunas orillas o en las lanchas 
+        solo está permitido el pasar por algunas orillas o en las lanchas. 
         
         Si deseas pasar un bello día con tu familia, este lugar puede ser el indicado para tu familia, 
         amigos o pareja, la gente que se encarga de supervisar área es muy amable. """,
