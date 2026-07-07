@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos | Turismo San Felipe del Progreso</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+
+<!-- ENCABEZADO -->
+<header class="hero-eventos">
+
+    <div class="overlay">
+
+        <h1>Eventos de San Felipe del Progreso</h1>
+
+        <p>
+            Descubre las festividades, tradiciones y actividades culturales
+            que hacen de San Felipe del Progreso un destino lleno de historia,
+            identidad y riqueza cultural.
+        </p>
+
+        <a class="boton" href="{{ url_for('inicio') }}">
+             Volver al inicio
+        </a>
+
+    </div>
+
+</header>
+
+<!-- CONTENIDO -->
+<section class="contenedor-eventos">
+
+    {% for evento in eventos %}
+
+    <div class="tarjeta-evento">
+
+        <div class="icono">
+            🎊
+        </div>
+
+        <h2>{{ evento.nombre }}</h2>
+
+        <p><strong>📅 Fecha:</strong> {{ evento.fecha }}</p>
+
+        <p><strong>📍 Lugar:</strong> {{ evento.lugar }}</p>
+
+        <p>{{ evento.descripcion }}</p>
+
+    </div>
+
+    {% endfor %}
+
+</section>
+
+<footer class="footer">
+
+    <p>
+        © 2026 Turismo San Felipe del Progreso | Desarrollado con Python, Flask, HTML y CSS
+    </p>
+
+</footer>
+
+</body>
+
+</html>
