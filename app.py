@@ -158,43 +158,23 @@ def obtener_clima(latitud, longitud):
 
 @app.route("/lugar/<int:id_lugar>")
 def detalle_lugar(id_lugar):
-
-    # Variable vacía
     lugar_encontrado = None
-
-    # Recorremos todos los lugares
     for lugar in lugares:
-
-        # Verificamos si el ID coincide
         if lugar["id"] == id_lugar:
-
-            # Guardamos el lugar encontrado
             lugar_encontrado = lugar
-
-            # Rompemos el ciclo
             break
-    clima = obtener_clima(
-    lugar["latitud"],
-    lugar["longitud"]
-    )
-    return render_template(
-    "detalle.html",
-    lugar=lugar,
-    clima=clima
-    )
-    # Si no existe el lugar
-    # mostramos error 404
     if lugar_encontrado is None:
         abort(404)
-
-    # Abrimos detalle.html
-    # y enviamos la información del lugar
+    clima = obtener_clima(
+        lugar_encontrado["latitud"],
+        lugar_encontrado["longitud"]
+    )
     return render_template(
         "detalle.html",
-        lugar=lugar_encontrado
+        lugar=lugar_encontrado,
+        clima=clima
     )
-
-
+    
 # =========================================================
 # INICIAR SERVIDOR
 # =========================================================
