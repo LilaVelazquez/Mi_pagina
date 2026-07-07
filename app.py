@@ -32,10 +32,20 @@ lugares = [
 
         # Descripción corta
         "descripcion": "Espacio cultural que representa la identidad mazahua.",
+        "descripcion2": """
+        Es uno de los espacios culturales más
+        representativos del municipio de San Felipe del Progreso. Fue creado
+        para preservar la identidad, las tradiciones y la riqueza cultural
+        del pueblo mazahua.
+
+        Durante todo el año recibe visitantes interesados en conocer su
+        arquitectura, monumentos y ceremonias tradicionales. Además,
+        es sede de eventos culturales, deportivos y festividades que
+        fortalecen el patrimonio indígena de la región.
+        """,
 
         # Ubicación
-        "ubicacion": "Santa Ana Nichi, San Felipe del Progreso, Estado de México",
-        
+        "ubicacion": "Santa Ana Nichi, San Felipe del Progreso, Estado de México", 
         "latitud": 19.572714,
         "longitud": -99.962900,
         
@@ -54,6 +64,18 @@ lugares = [
         "nombre": "Presa de Tepetitlán",
         "imagen": "https://th.bing.com/th/id/OIP.9sy6JlYLRwaWHs8bKyvvMQHaEK?w=317&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
         "descripcion": "Lugar natural ideal para descansar y disfrutar paisajes.",
+         "descripcion2": """ 
+        La prensa de Tepetitlán está ubicada en el municipio de San Felipe de Progreso, 
+        el cual se ubica al noroeste del Estado de México.
+        
+        Puedes ingresar por San Felipe del Progreso – Ixtlahuaca, desviación a Santa Cruz Mextepec, 
+        por la carretera San Felipe – Carmona km 2, desviación a Estutempan. El lugar es muy bello, 
+        pero no es apto para nadar, así que para evitar accidentes no debes sumergirte en sus aguas, 
+        solo está permitido el pasar por algunas orillas o en las lanchas 
+        
+        Si deseas pasar un bello día con tu familia, este lugar puede ser el indicado para tu familia, 
+        amigos o pareja, la gente que se encarga de supervisar área es muy amable. """,
+        
         "ubicacion": "San Antonio Mextepec, San Felipe del Progreso, Estado de México",
         "latitud": 19.661047,
         "longitud": -99.961116,
@@ -71,6 +93,15 @@ lugares = [
         "nombre": "Cascada del salto del tigre",
         "imagen": "https://th.bing.com/th/id/OIP.eLxz1wg27J8-N6jBZSB2XAHaEi?w=291&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
         "descripcion": "Caída de agua escondida entre el cerro del Tigre y cañadas boscosas en San Felipe del Progreso",
+        "descripcion2": """
+         La cascada Salto de tigre un paraíso natural, ubicado en carretera Santa Ana Nichi, 
+         Municipio de San Felipe del Progreso. llegar es muy fácil hay que tomar una unidad del municipio 
+         de san Felipe del progreso a la comunidad de Santa Ana Nichi. 
+        
+          Al pasar por una de las curvas del barrio del tigre aparece un pequeño paraíso rodeado de cerros, 
+         campos y hasta una encantadora presa, un riachuelo se trasforma en una belleza de más de 20 metros de 
+         altura rodeada de encinos y briza fresca parece sacado de una postal, es una de las más hermosas del 
+         Estado de México. """,   
         "ubicacion": "Villa de Santa Ana Nichi, San Felipe del Progreso, Estado de México",
         "latitud": 19.588630,
         "longitud": -99.956051,  
