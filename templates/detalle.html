@@ -90,6 +90,17 @@
 <center>Ubicación</center>
 
 <div id="map"></div>
+<div class="clima">
+
+    <h2>🌦 Clima actual</h2>
+
+    <p>🌡 {{ clima.temperature_2m }} °C</p>
+
+    <p>💧 Humedad: {{ clima.relative_humidity_2m }}%</p>
+
+    <p>💨 Viento: {{ clima.wind_speed_10m }} km/h</p>
+
+</div>    
 <div style="text-align:center; margin-top:15px;">
     <a class="boton"
        href="https://www.google.com/maps/dir/?api=1&destination={{ lugar.latitud }},{{ lugar.longitud }}"
