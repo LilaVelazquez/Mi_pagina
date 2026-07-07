@@ -4,9 +4,10 @@
 # DESARROLLADO CON PYTHON Y FLASK
 # =========================================================
 
-# Importamos Flask
+# Importamos Flask y requests
 # Flask sirve para crear páginas web con Python
 from flask import Flask, render_template, abort
+import requests
 
 # Creamos nuestra aplicación Flask
 app = Flask(__name__)
@@ -127,7 +128,24 @@ def inicio():
     # También enviamos la lista de lugares
     return render_template("index.html", lugares=lugares)
 
+def obtener_clima(latitud, longitud):
 
+    url = (
+        "https://api.open-meteo.com/v1/forecast"
+        f"?latitude={latitud}"
+        f"&longitude={longitud}"
+        "&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m"
+    )
+
+    respuesta = requests.get(url)
+
+    if respuesta.status_code == 200:
+
+        datos = respuesta.json()
+
+        return datos["current"]
+
+    return None
 # =========================================================
 # RUTA DE DETALLE
 # =========================================================
@@ -155,7 +173,15 @@ def detalle_lugar(id_lugar):
 
             # Rompemos el ciclo
             break
-
+    clima = obtener_clima(
+    lugar["latitud"],
+    lugar["longitud"]
+    )
+    return render_template(
+    "detalle.html",
+    lugar=lugar,
+    clima=clima
+    )
     # Si no existe el lugar
     # mostramos error 404
     if lugar_encontrado is None:
