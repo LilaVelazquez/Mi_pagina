@@ -203,3 +203,20 @@ button{
     margin:8px 0;
 
 }
+.tarjeta-evento{
+    max-width:900px;
+    margin:25px auto;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+.tarjeta-evento h2{
+    color:#2E8B57;
+}
+
+.tarjeta-evento p{
+    line-height:1.7;
+    text-align:justify;
+}
