@@ -165,22 +165,24 @@ def eventos_page():
 
 def obtener_clima(latitud, longitud):
 
-    url = (
-        "https://api.open-meteo.com/v1/forecast"
+"https://api.open-meteo.com/v1/forecast"
         f"?latitude={latitud}"
         f"&longitude={longitud}"
         "&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m"
     )
 
-    respuesta = requests.get(url)
-
-    if respuesta.status_code == 200:
+    try:
+        respuesta = requests.get(url, timeout=10)
+        respuesta.raise_for_status()
 
         datos = respuesta.json()
+        print("Respuesta de Open-Meteo:", datos)
 
-        return datos["current"]
+        return datos.get("current")
 
-    return None
+    except Exception as e:
+        print("Error al obtener el clima:", e)
+        return None
 # =========================================================
 # RUTA DE DETALLE
 # =========================================================
