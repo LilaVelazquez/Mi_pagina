@@ -165,7 +165,7 @@ def eventos_page():
 
 def obtener_clima(latitud, longitud):
 
-"https://api.open-meteo.com/v1/forecast"
+        "https://api.open-meteo.com/v1/forecast"
         f"?latitude={latitud}"
         f"&longitude={longitud}"
         "&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m"
